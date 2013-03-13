@@ -1,0 +1,166 @@
+/***************************************************
+
+ Smooth Student Submission System (SSSS)
+
+ This file is part of SSSS, which is licensed
+ under the Creative Commons: Attribution,
+ Non-Commercial, Share Alike license (see
+ http://creativecommons.org/licenses/by-nc-sa/3.0/)
+ 
+ The first version was developed by
+ Gjalt-Jorn Peters for the Dutch Open University
+ in September 2012.
+ 
+***************************************************/
+
+body {
+  font-family: 'ShantiGreaterGoodVersionRg', 'Shanti', 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.title {
+  display       : block;
+  font-size     : 2em;
+}
+
+.header {
+  font-size     :2em;
+  height        : 80px;
+}
+
+.ou_logo {
+  width            : 254px;
+  height           : 75px;
+  background-image : url('images/ou logo.png');
+  margin-right     : 10px;
+  float            : right;
+}
+
+.hugetitle {
+  display       : block;
+  font-size     : 4em;
+}
+
+.subtitle {
+  display       : block;
+  padding       : 5px 5px;
+  font-size     : 120%;
+  text-align    : center;
+  color         : #FFFFFF;
+  background    : #E00018;
+}
+
+.headingBar {
+  clear         : both;
+  padding       : 1px 3px;
+  color         : #E00018;
+  background    : #DDDDDD;
+}
+
+label.error {
+  margin-left   : 10px;
+  font-size     : 80%;
+  padding       : 1px 3px; 
+  border        : 1px solid #FF0000;
+  color         : #FF0000;
+  background    : #FFBBBB;
+}
+
+.small {
+  font-size : .8em;
+  margin    : 0px auto 20px auto;
+  text-align: center;
+}
+
+.wrapper {
+  width     : 798px;
+  max-width : 798px;
+  margin    : 10px auto auto auto;
+  padding   : 20px;
+  border    : 0px black solid;
+}
+
+textarea {
+  resize  : none;
+}
+
+form {
+  margin  : 0px;
+}
+
+textarea.bigTextArea {
+  width   : 800px;
+}
+
+.formRow {
+  clear       : both;
+  margin      : 10px 0px;
+}
+
+.formLabel {
+  width   : 175px;
+  float   : left;
+}
+
+.formInput {
+  width   : 300px;
+}
+
+.courseButton {
+  width       : 200px;
+  padding     : 2px;
+  border      : 1px solid red;
+  margin      : 2px 2px 2px 2px;
+  float       : left;
+  text-align  : center;
+  background  : #EEEEEE;
+}
+
+.courseButton:hover {
+  cursor      : default;
+  background  : #DDDDDD;
+}
+
+.courseButton:active {
+  border      : 1px solid red;
+  background  : #CCCCCC;
+  padding     : 3px 1px 1px 3px;
+}
+
+.formBlock {
+  margin      : 10px 0px;
+}
+
+.infoblock {
+  margin        : 1em 2em 1em 2em;
+  padding       : .5em .5em .5em .5em;
+  display       : block;
+  border        : 1px solid #0000FF;
+  color         : #0000FF;
+  background    : #BBBBFF;
+}
+
+.errorblock {
+  margin        : 1em 2em 1em 2em;
+  padding       : .5em .5em .5em .5em;
+  display       : block;
+  border        : 1px solid #FF0000;
+  color         : #FF0000;
+  background    : #FFBBBB;
+}
+
+.hintBlock {
+  margin        : 2em 2em 2em 2em;
+  padding       : .2em .5em .2em .2em;
+  display       : block;
+  border        : 1px solid #999999;
+  color         : #666666;
+  background    : #EEEEEE;
+  font-size     : 88%;
+}
+
+div.clearFloat {
+  clear: both;
+  height: 0px;
+}
