@@ -106,7 +106,9 @@
       }
       else {
         $errorBlock .= "<li>Er is een cursus geselecteerd die niet bestaat (nummer: $course).</li>";
-        errorHandler("Non-existant course POSTed (number: $course)!");
+      }
+      if (!(is_numeric($nr) && (strlen($nr) == 9))) {
+        $errorBlock .= "<li>Het studentnummer is geen nummer, en/of niet 9 tekens lang ($nr).</li>";
       }
     }
     else {
@@ -227,6 +229,10 @@
 Bij deze de datafile voor {$selectedCourse->name}.
 
 Deze datafile is voor $name (nummer $nr).
+
+Vergeet niet het pad aan te passen in de syntax! Tussen de aanhalingstekens achter /FILE= staat nu alleen nog de naam van de datafile: hier moet je de folder nog voor toevoegen, zodat het bijvoorbeeld zoiets wordt:
+
+  /FILE=\"C:\Users\Username\My Documents\OU\\".$selectedCourse->name."\data\$storedDataFileName\"
 
 Met vriendelijke groet,
 

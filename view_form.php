@@ -26,7 +26,7 @@
             <option value=""></option>
 <?php
   foreach ($courses as $currentCourse) {
-    echo("<option value=\"{$currentCourse->id}\">{$currentCourse->name}</option>");
+    echo("<option value=\"{$currentCourse->id}\" ".($currentCourse->id == $course ?"selected":"").">{$currentCourse->name}</option>");
   }
 ?>
           </select>

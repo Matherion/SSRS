@@ -1,3 +1,10 @@
+*********************.
+***  Import data  ***.
+*********************.
+
+* NB: vergeet niet om de drive en folder waarin de datafile
+* staat opgeslagen, toe te voegen in /FILE="[GJYP_FILENAME]".
+
 GET DATA
   /TYPE=TXT
   /FILE="[GJYP_FILENAME]"
@@ -26,3 +33,28 @@ GET DATA
 CACHE.
 EXECUTE.
 DATASET NAME PsychologischExperiment WINDOW=FRONT.
+
+**************************.
+***  Set value labels  ***.
+**************************.
+
+VALUE LABELS cond_sc
+  1 'mild'
+  2 'streng'.
+VALUE LABELS cond_rv
+  1 'rechtvaardig'
+  2 'onrechtvaardig'.
+VALUE LABELS v1 v2 v3 v9 v10 v11
+  1 'nee, nooit'
+  7 'ja, heel vaak'.
+VALUE LABELS v7
+  1 'zeer soepel'
+  7 'zeer streng'.
+VALUE LABELS v8
+  1 'heel oneerlijk'
+  7 'heel eerlijk'.
+VALUE LABELS sekse
+  1 'man'
+  2 'vrouw'.
+
+EXECUTE.
